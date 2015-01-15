@@ -3,7 +3,7 @@ Ionic iOS segmented control.
 
 ## How to use it
 ```
-<segmented-control style="width: 200px;">
+<segmented-control on-select="buttonClicked($index)" style="width: 200px;">
     <segmented-control-button class="button-positive" title="'Month'"></segmented-control-button>
     <segmented-control-button class="button-positive" title="'Day'" selected></segmented-control-button>
 </segmented-control>
