@@ -1,5 +1,5 @@
 angular.module('ti-segmented-control', []
-).directive('segmentedControl', function () {
+).directive('tiSegmentedControl', function () {
     return {
         restrict: 'E',
         transclude: true,
@@ -7,15 +7,13 @@ angular.module('ti-segmented-control', []
         scope: {
             onSelect: "&"
         },
-        template: '<div class=\"buttons\">' +
-        '<div class=\"button-bar bar-light ti-segmented-control\" ng-transclude></div></div>',
+        template: '<div class=\"buttons\"><div class=\"button-bar bar-light ti-segmented-control\" ng-transclude></div></div>',
 
         controller: function($scope){
             this.buttons = [];
             this.setSelectedButton = function (title) {
                 $scope.onSelect({$index: this.buttons.indexOf(title)});
             }
-
             var style = window.document.createElement('style');
             style.type = 'text/css';
             style.innerHTML += '.button.button-outline.ti-segmented-control:first-child { border-top-left-radius: 5px;border-bottom-left-radius: 5px; }';
@@ -27,10 +25,10 @@ angular.module('ti-segmented-control', []
         link: function (scope) {
         }
     }
-}).directive('segmentedControlButton', function () {
+}).directive('tiSegmentedControlButton', function () {
     return {
         replace: true,
-        require: '^segmentedControl',
+        require: '^tiSegmentedControl',
         scope: {
             title: '='
         },
