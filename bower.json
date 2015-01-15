@@ -1,0 +1,18 @@
+{
+  "name": "ti-segmented-control",
+  "version": "0.0.1",
+  "main": "dist/ti-segmented-control.js",
+  "homepage": "https://github.com/tinga-dev/ti-ionic-segmented-control",
+  "authors": [
+    "Richard Larsson <ri.la@me.com>",
+    "Mikael Bolmstam <mikael.bolmstam@gmail.com>"
+  ],
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "LICENCE",
+    "README.md"
+  ],
+  "description": "iOS segmented control directive for ionic apps",
+  "license": "MIT"
+}
