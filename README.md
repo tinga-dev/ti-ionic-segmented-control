@@ -3,10 +3,10 @@ Ionic iOS segmented control.
 
 ## How to use it
 ```
-<segmented-control on-select="buttonClicked($index)" style="width: 200px;">
-    <segmented-control-button class="button-positive" title="'Month'"></segmented-control-button>
-    <segmented-control-button class="button-positive" title="'Day'" selected></segmented-control-button>
-</segmented-control>
+<ti-segmented-control on-select="buttonClicked($index)" style="width: 200px;">
+    <ti-segmented-control-button class="button-positive" title="'Month'"></ti-segmented-control-button>
+    <ti-segmented-control-button class="button-positive" title="'Day'" selected></ti-segmented-control-button>
+</ti-segmented-control>
 ```
 
 ## Demo
