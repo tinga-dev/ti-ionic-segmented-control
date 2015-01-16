@@ -7,6 +7,10 @@ bower install ti-segmented-control
 ```
 Include dist/ti-segmented-control.js in your project.
 
+```
+angular.module('App', ['ti-segmented-control']);
+```
+
 ```html
 <ti-segmented-control on-select="buttonClicked($index)" style="width: 200px;">
     <ti-segmented-control-button class="button-positive" title="'Month'"></ti-segmented-control-button>
