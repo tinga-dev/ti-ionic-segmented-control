@@ -8,7 +8,7 @@ $ bower install ti-segmented-control
 ```
 Include "bower_components/ti-segmented-control/dist/ti-segmented-control.js" in your project.
 
-```
+```javascript
 angular.module('App', ['ti-segmented-control']);
 ```
 
