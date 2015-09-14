@@ -28,11 +28,12 @@ angular.module('ti-segmented-control', []
 }).directive('tiSegmentedControlButton', function () {
     return {
         replace: true,
+        transclude: true,
         require: '^tiSegmentedControl',
         scope: {
             title: '='
         },
-        template: '<a class=\"button button-outline ti-segmented-control\">{{title}}</a>',
+        template: '<a class=\"button button-outline ti-segmented-control\"><ng-transclude></ng-transclude></a>',
         link: function(scope, element, attr, segmentedControlCtrl){
             segmentedControlCtrl.buttons.push(scope.title);
             if(attr.selected != undefined) element.addClass('active');
