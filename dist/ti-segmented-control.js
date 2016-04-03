@@ -12,7 +12,7 @@ angular.module('ti-segmented-control', []
         controller: ['$scope', function($scope){
             this.buttons = [];
             this.setSelectedButton = function (title) {
-                $scope.onSelect({$index: this.buttons.indexOf(title)});
+                $scope.onSelect({$index: this.buttons.indexOf(title), $title: title});
             }
             var style = window.document.createElement('style');
             style.type = 'text/css';
